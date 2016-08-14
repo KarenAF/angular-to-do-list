@@ -7,8 +7,7 @@
     $scope.tasks = [
       "Feed the cat",
       "Feed the baby",
-      "Feed the car",
-      " "
+      "Feed the car"
     ]
     $scope.reviews = [
       "AngularJS is awesome.",
@@ -16,8 +15,13 @@
       "I don't like AngularJS but I do like it."
     ];
 
+   $scope.newTask = ""; 
+
    $scope.addTask = function(input) {
+    if(input !== "") {
       $scope.tasks.push(input);
+      };
+    $scope.newTask = ""  
     };    
 
    $scope.addReview = function(inputReview) {
