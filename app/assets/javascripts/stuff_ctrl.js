@@ -7,6 +7,9 @@
     $scope.task1 = "Feed the cat";
     $scope.task2 = "Feed the baby";
     $scope.task3 = "Feed the car";
-        
+    $scope.task4 = " ";
+     
+
+    window.$scope = $scope;    
   });
 })();
