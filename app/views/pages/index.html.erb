@@ -7,10 +7,15 @@
     <p> <input ng-model="task"> </p>   
  </div> 
  </ol>
+
+<h3> Add a new task: </h3>
+  <input ng-model="newTask">
+  <button ng-click="addTask(newTask)"> Add Task </button>
+
 <br>
   <h3> Leave a review for Angular </h3>
-  <input ng-model="">
-  <button> Add Review</button>
+  <input ng-model="newReview">
+  <button ng-click="addReview(newReview)"> Add Review </button>
     <h2> Angular JS Reviews: </h2>
     <p ng-repeat="review in reviews"> {{ review }} </p>
    </div>
