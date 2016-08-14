@@ -4,11 +4,12 @@
   angular.module("app").controller("stuffCtrl", function($scope) {
 
     $scope.message = "Hello!";
-    $scope.task1 = "Feed the cat";
-    $scope.task2 = "Feed the baby";
-    $scope.task3 = "Feed the car";
-    $scope.task4 = " ";
-     
+    $scope.tasks = [
+      "Feed the cat",
+      "Feed the baby",
+      "Feed the car",
+      " "
+    ]
     $scope.reviews = [
       "AngularJS is awesome.",
       "AngularJS is weird",

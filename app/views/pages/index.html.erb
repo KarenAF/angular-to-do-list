@@ -1,12 +1,16 @@
  <h1>To-Do List</h1>
   <div ng-app="app">
    <div ng-controller="stuffCtrl">
-     <p> 1. {{ task1 }}</p>
+    <p ng-repeat="task in tasks"> {{ task }} </p>  
+      <p> task </p> 
+     <input ng-model="task">     
+
+<!--      <p> 1. {{ task }}</p>
      <input ng-model="task1">     
      <p> 2. {{ task2 }}</p>
      <input ng-model="task2">
      <p> 3. {{ task3 }}</p>
-     <input ng-model="task3">   
+     <input ng-model="task3">    -->
      <p> 4. {{ task4 }}</p>       
      <p> Type new task: <input ng-model="task4"></p> 
 
