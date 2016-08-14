@@ -9,6 +9,11 @@
     $scope.task3 = "Feed the car";
     $scope.task4 = " ";
      
+    $scope.reviews = [
+      "AngularJS is awesome.",
+      "AngularJS is weird",
+      "I don't like AngularJS but I do like it."
+    ];
 
     window.$scope = $scope;    
   });
