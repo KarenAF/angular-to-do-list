@@ -1,8 +1,8 @@
 <h1>To-Do List</h1>
 <div ng-app="app">
- <div ng-controller="stuffCtrl">
+ <div ng-controller="TodosCtrl">
  <ol> 
- <div ng-repeat="task in tasks"> 
+ <div ng-repeat="task in tasks track by $index" ng-click="completeTask($index)"> 
     <li> {{task}} </li>
     <p> <input ng-model="task"> </p>   
  </div> 
